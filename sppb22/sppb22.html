@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Dette er screening test for styrke og balanse hos eldre personer.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sppb22.css">
+
+        <title>SPPB TEST</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <!-- LOGO-->
+            <a href="sppb22.html" id="logo"><img src="images/logo.png" alt="Tilbake til top page"></a>
+            
+            <!-- PC用ナビゲーション -->
+            <nav id="navi-pc">
+                <a href="sppb22.html#aboutsppb">OM SPPB TEST</a>
+                <a href="sppb22.html#testprosedyr">TESTPROSEDYR</a>
+                <a href="sppb22.html#resultat">OM RESULTAT</a>
+                <a href="samletefotter.html">START TEST</a>
+            </nav>
+            
+            <!-- MOBILE用ナビゲーション -->
+            <img id="menu-sp" src="images/menubtn.png" alt="go to the menu" onclick="document.getElementById('nav-sp').style.display = 'block'">
+            <nav id="nav-sp">
+                <img id="close" src="images/button-close.png" alt="Lukke meny" onclick="document.getElementById('nav-sp').style.display = 'none'">
+                    <a class="menu" href="sppb22.html" onclick="document.getElementById('nav-sp').style.display = 'none'">TILBAKE TIL TOP</a>
+                    <a class="menu" href="sppb22.html#aboutsppb" onclick="document.getElementById('nav-sp').style.display = 'none'">OM SPPB</a>
+                    <a class="menu" href="sppb22.html#testprosedyr" onclick="document.getElementById('nav-sp').style.display = 'none'">TESTPROSEDYR</a>
+                    <a class="menu" href="sppb22.html#resultat" onclick="document.getElementById('nav-sp').style.display = 'none'">OM RESULTAT</a>
+                    <a class="menu" href="samletefotter.html" onclick="document.getElementById('nav-sp').style.display = 'none'">START TEST</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <section id="main-visual">
+                  <div>
+                        <img id="img-main" src="images/main.png" alt="mainlogo">
+                    <div>
+                        <a href="samletefotter.html"><button id="startbutton">Start test</button></a>
+                    </div>
+                  </div>    
+                </section> 
+                <section class="box" id="aboutsppb">
+                    <div class="container">
+                        <h1 class="box-title" >OM SPPB</h1>
+                        <div class="content">
+                            <h2>Hva er SPPB?</h2>
+                            <div class="content-explain">
+                                <p>Short Physical Performance Battery (SPPB) er en screeningtest for fysisk funksjon hos eldre. </p>
+                                <p>SPPB består av tre deltester: Statisk balanse, 4 m gange i vanlig tempo og 5 repetisjoner reise/sette seg i raskt tempo. </p>
+                                <p>Hver deltest scores på tid, og tiden omgjøres til poeng (0-4) som gir en totalscore fra 0 til 12 poeng.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="box" id="testprosedyr">
+                    <div class="container">
+                        <h1 class="box-title">TESTPROSEDYR</h1>
+                        <div class="content">
+                            <div id="utstyr-manual">
+                            <div class="content-explain" id="utstyr-manual1">
+                                <h2>NØDVENDIG UTSTYR</h2>
+                                    <ul>
+                                        <li>Stoppeklokke</li>
+                                        <li>Målebånd</li>
+                                        <li>Farget markerings teip</li>
+                                        <li>Stol</li>
+                                    </ul>
+                            </div>
+                            <div class="content-explain" id="utstyr-manual2">
+                                <h2>TESTMANUALEN</h2>
+                                <p>Testen tar normalt 5-10 min å gjennomføre, krever lite utstyr og plass og er egnet for pasienter med et bredt funksjonsspekter. </p>
+                                <p>Manualen lastes ned <a id="manual-link" href="https://www.legeforeningen.no/contentassets/870420284b7d4cb98100191ff93e7983/sppb.pdf" target="_blank">HER</a>.Du kan også se på en kort video om gjennomføring og tolkning av SPPB.</p>
+                                <iframe id="youtube-link" src="https://www.youtube.com/embed/c2FN6PeJQao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="box" id="resultat">
+                    <div class="container">
+                        <h1 class="box-title">OM RESULTAT</h1>
+                        <div class="content">
+                            <div class="content-explain">
+                                <h2>HVORDAN TOLKE RESULTAT?</h2>
+                                <div id="scoredetails">
+                                    <div id="score-left">
+                                        <table>
+                                            <tr>
+                                                <th>Lav score</th> <td>0-6 poeng</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Middel score</th> <td>7-9 poeng</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Høy score</th> <td>10-12 poeng</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div id="score-right">
+                                        <p> < 10 poeng indikerer økt risiko for funksjonssvikt </p>
+                                        <p> < 8 poeng indikerer begynnende svikt i ADL funksjoner</p>
+                                        <p>Klinisk meningsfull endring (totalscore): 1 poeng </p>
+                                        <p>Testens styrke er godt dokumentert for å identifisere eldre i risiko for funksjonstap og den er egnet til å måle endring i funksjon over tid. </p>
+                                    </div>
+                                </div>
+                            <div class="content-explain">
+                                <h2>REFERANSEVERDIER FOR GANGHASTIGHET</h2>
+                            <div id="gange">
+                                <div>
+                                    <p id="gange-p">Ganghastighet kan brukes som en selvstendig test, er et anbefalt mål på helse og funksjon hos eldre og har veletablerte referanse verdier</p>
+                                </div>
+                                <div>
+                                    <a href="images/ganghastighet.PNG" data-lightbox="group"><img id="ganghastighet" src="images/ganghastighet.PNG"></a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div id="footer-link">
+                    <a href="sppb22.html#aboutsppb">OM SPPB TEST</a>
+                    <a href="sppb22.html#testprosedyr">TESTPROSEDYR</a>
+                    <a href="sppb22.html#resultat">OM RESULTAT</a>
+                    <a href="samletefotter.html">START TEST</a>
+            </div>
+            <div id="copyright">
+                <p>&copy;2022 FYSIO SPPB, Inc. All Rights Reserved. </p>
+            </div>
+        </footer>
+    </body>
+</html>

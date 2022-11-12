@@ -1,0 +1,542 @@
+/* pc&mobile style */
+body {
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  }
+
+
+/* PC style */
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+  .p {
+    font-size: 16pxs;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+  }
+
+  #logo > img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  #navi-pc {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    margin-right: 5px;
+    text-align: right;
+  }
+  
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #navi-pc > a {
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  #navi-pc > a:link {
+    color: white;
+  }
+  #navi-pc > a:visited {
+    color: white;
+  }
+  #navi-pc > a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  #navi-pc > a:active {
+    color: white;
+  }
+
+  #nav-sp {
+    display: none;
+  }
+
+  #menu-sp {
+    display: none;
+  }
+
+  /*SECTION2*/
+  /*親要素だからrelative*/
+  #main-visual {
+    position: relative;
+  }
+
+  #startbutton {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    font-size: 200%;
+    padding: 30px;
+    border-radius: .4rem;
+  }
+
+  #main-visual > img {
+    width: 100%;
+  }
+
+  #img-main {
+    margin-top: 20px;
+    max-width: -webkit-fill-available;
+  }
+
+  .box {
+      margin: 2em 0;
+      background: #dcefff;
+  }
+  
+  h1 {
+      margin-top: 0;
+      font-size: 60px;
+      background: #5fb3f5;
+      text-align: center;
+      color: #FFF;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+  }
+
+  .box .p {
+      font-size: 16px;
+      padding: 15px 20px;
+      margin: 0;
+  }
+
+
+  .container {
+    padding-bottom: 40px;
+  }
+
+  .content {
+    padding: 0px 50px 15px 50px;
+  }
+
+  #utstyr-manual {
+    display: flex;
+  }
+
+  #utstyr-manual1 {
+    flex-basis: 40%;
+  }
+
+  #utstyr-manual2 {
+    flex-basis: 60%;
+
+  }
+
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+
+  td {
+    padding: 1em;
+    border: 1px solid #333;
+  }
+
+  th {
+    padding: 1em;
+    background-color: #2c88d9;
+    color: #FFF;
+    border: 1px solid #333;
+  }
+
+  #scoredetails {
+      display: flex;
+  }
+
+  #scoredetails {
+    display: flex;
+}
+
+  #score-left {
+    padding: 30px 20px 20px 20px;
+    white-space: nowrap;
+  }
+
+  #score-right {
+    padding: 20px;
+  }
+
+  #gange {
+    display: flex;
+  }
+
+  #gange-p {
+    padding: 0 60px 0 35px;
+    text-align: justify;
+  }
+
+  #ganghastighet {
+    width: 400px;
+    height: 250px;
+  }
+
+  footer {
+    background-color: darkblue;
+    text-align: center;
+    padding: 80px 80px 30px 80px;
+  }
+
+  #footer-link {
+    margin-bottom: 50px;
+  }
+
+  #footer-link > a {
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  #footer-link > a:link {
+    color: #ffffff;
+  }
+  #footer-link > a:visited {
+    color: #ffffff;
+  }
+  #footer-link > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  #footer-link > a:active {
+    color: #ffffff;
+  }
+
+  #copyright {
+    color: white;
+  }
+
+/* CSS for balansetest.html og gangetest.html og reisesettetest.html*/
+
+
+#timer {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  color: #1e90ff;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+  margin: auto;
+}
+
+#buttons {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#stopwatch {
+  margin: auto;
+}
+
+#start, #stop, #reset, #nexttest, #score, #total {
+  font-size: 30px;
+  border-radius: .3rem;
+  box-shadow: 0 0 20px rgba(77, 78, 79, 0.25);
+} 
+
+.container2 {
+  display: flex;
+  padding: 40px;
+}
+
+.content-test {
+  display: flex;
+}
+
+#backtobalanse, #backtogange {
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #1e90ff;
+  padding: 15px;
+  border-radius: .4rem;
+  position: relative;
+  bottom: 50px;
+  left: 30px;
+  text-decoration: none;
+}
+
+
+}
+
+/*Mobile style*/
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+  }  
+
+  /* PC用ナビゲーション非表示 */
+  #navi-pc {
+    display: none;
+  }
+
+  #logo > img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  #nav-sp {
+    background-color: darkblue;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+ }
+
+ #menu-sp {
+  float: right;
+  padding: 0;
+ }
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+ }
+
+#nav-sp > a {
+  display: block;
+}
+#nav-sp > a:link {
+  color: #ffffff;
+}
+#nav-sp > a:visited {
+  color: #ffffff;
+}
+#nav-sp > a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+#nav-sp > a:active {
+  color: #ffffff;
+}
+#nav-sp > .menu {
+  text-decoration: none;
+  display: flex;
+  margin:60px 20px 0 20px;
+  height: 44px;
+  font-size: 16px;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+ 
+#main-visual {
+  position: relative;
+}
+ 
+#startbutton {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+#img-main {
+  width: 100%;
+  max-width: -webkit-fill-available;
+}
+
+.box {
+  background: #dcefff;
+}
+.box .box-title {
+  font-size: 35px;
+  margin: 0;
+  background: #5fb3f5;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.box .p {
+  padding: 15px 20px 0 20px;
+  margin: 0;
+}
+
+.content {
+  padding: 0px 50px 15px 50px;
+}
+
+.content-explain {
+  font-size: 16px;
+}
+
+#manual-link {
+  font-weight: bold;
+}
+
+#manual-link > a {
+  display: block;
+}
+
+#manual-link > a:link {
+  color: black;
+}
+
+#manual-link > a:visited {
+  color: black;
+}
+
+#manual-link > a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#manual-link > a:active{
+  color: black;
+}
+
+#youtube-link {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+
+td {
+  border: 1px solid #333;
+}
+
+th {
+  background-color: #2c88d9;
+  color: #FFF;
+  border: 1px solid #333;
+}
+
+#ganghastighet {
+  width: 100%;
+}
+
+footer {
+  background-color: darkblue;
+  font-size: 9px;
+  padding: 30px 10px 10px 10px;
+  text-align: center;
+}
+
+#footer-link {
+  margin-bottom: 50px;
+}
+
+#footer-link > a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+#footer-link > a:link {
+  color: #ffffff;
+}
+#footer-link > a:visited {
+  color: #ffffff;
+}
+#footer-link > a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+#footer-link > a:active {
+  color: #ffffff;
+}
+
+#copyright {
+  color: white;
+}
+
+
+/* CSS for balansetest.html og gangetest.html og reisesettetest.html*/
+
+
+#blnstabell.content {
+  display: grid;
+  margin-top: 30px;
+}
+
+#buttons {
+  display:grid;
+}
+
+#timer {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  color: #1e90ff;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+  margin: auto;
+}
+
+#start {
+  font-size: 60px;
+  border-radius: 50rem;
+  box-shadow: 0 0 20px rgba(77, 78, 79, 0.25);
+  padding: 20px;
+}
+
+#stop {
+  font-size: 40px;
+  border-radius: 50rem;
+  box-shadow: 0 0 20px rgba(77, 78, 79, 0.25);
+  padding: 20px;
+}
+#reset, #nexttest, #score, #total {
+  font-size: 30px;
+  border-radius: 50rem;
+  box-shadow: 0 0 20px rgba(77, 78, 79, 0.25);
+
+}
+
+#backtobalanse, #backtogange, #backtohovedside {
+  display: inline-block;
+  font-size: 15px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #1e90ff;
+  padding: 5px;
+  border-radius: .4rem;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.content {
+  display: grid;
+  margin-top: 30px;
+}
+
+
+}
