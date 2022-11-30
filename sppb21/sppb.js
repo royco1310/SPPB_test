@@ -143,7 +143,8 @@ function resetTimer() {
         //文字列の末尾2桁を表示したいのでsliceで負の値(-2)引数で渡してやる。
         m = ('0' + m).slice(-2); 
         s = ('0' + s).slice(-2);
-        ms = ('0' + ms).slice(-3);
+        ms = ('0' + ms).slice(-2);
+       // ms = ('0' + ms).slice(-3);
 
         //HTMLのid　timer部分に表示させる　
         timer.textContent = m + ':' + s + ':' + ms;
