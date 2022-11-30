@@ -10,9 +10,9 @@ let y = 0;
 console.log('your totalscore is', sum, 'point');
 p.textContent = sum;
 
-console.log('your ganghastighet is', besttime, '.');
+console.log('you took', besttime, 'seconds at walking test');
 y = 4 / besttime;
-console.log(y);
+console.log(y, 'is your ganghastighet');
 const ggg = Math.ceil(y * Math.pow(10, 2) ) / Math.pow(10, 2);
 console.log(ggg);
 g.textContent = ggg;
